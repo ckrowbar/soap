@@ -131,7 +131,6 @@ func kickMember(dg *discordgo.Session, memberID string) {
 	}
 	invite, err := dg.ChannelInviteCreate("857620594424807464", discordgo.Invite{
 		MaxAge:    172800,
-		MaxUses:   1,
 		Temporary: false,
 	})
 	if err != nil {

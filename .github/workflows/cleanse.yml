@@ -24,4 +24,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run script
         run: |
-          go run main.go -g ${{ secrets.NYANPASU_GUILD_ID }} -t ${{ secrets.SOAP_DISCORD_TOKEN }}
+          go run main.go -g ${{ secrets.TARGET_GUILD_ID }} -t ${{ secrets.SOAP_DISCORD_TOKEN }}
